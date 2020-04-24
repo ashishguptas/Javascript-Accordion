@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <button type="button" class="colorBtn">Press here to change color</button>
+    <script type="text/javascript">
+        const colorBtn = document.querySelector('.colorBtn');
+        const bodyBg = document.querySelector('body');
+        const color = ['yellow','green','red','pink','blue'];
+
+        colorBtn.addEventListener('click',changeBgColor);
+        bodyBg.style.backgroundColor = 'gray';
+        function changeBgColor(){
+            let randomColor = Math.floor(Math.random()*color.length);
+            bodyBg.style.backgroundColor = color[randomColor];
+        }
+
+    </script>
+</body>
+</html>
