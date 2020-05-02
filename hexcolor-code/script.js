@@ -11,9 +11,9 @@ function changeBg(){
         const random = Math.floor(Math.random()*hexNum.length);
         // console.log(random)
         hexcol += hexNum[random];
-        console.log(hexcol);
+        // console.log(hexcol);
     }
     bodyBg.style.backgroundColor = hexcol;
     hexCode.innerHTML = hexcol;
 }
-changeBg()
+changeBg();
