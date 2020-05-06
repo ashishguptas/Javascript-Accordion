@@ -1,0 +1,73 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+	font-family: sans-serif;
+	margin:0;
+    background-color: #222;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.accordion{
+	max-width: 600px;
+	background-color: #fbfbfb;
+	margin:60px auto;
+}
+
+.accordion .heading{
+	background-color: #009688;
+	padding:14px 20px;
+	position: relative;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.accordion .accordion-box:last-child .heading{
+	border-bottom: none;
+}
+.accordion .heading h3{
+	font-size: 18px;
+	color:#ffffff;
+	margin:0;
+	padding-right:50px;
+}
+
+.accordion .heading .fa{
+	color: #fff;
+    position: absolute;
+    right:20px;
+    top:50%;
+    margin-top:-15px;
+    height: 30px;
+    width: 30px;
+    border:1px solid #ffffff;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.accordion .body{
+ max-height:0;
+ overflow: hidden;	
+ transition: max-height .5s ease;
+}
+
+.accordion .body .text{
+ padding:20px;
+}
+.accordion .body .text p{
+	font-size: 14px;
+	color:#666;
+	margin:0;
+	line-height:22px; 
+}
+
+
+
+
+
+
+
+
